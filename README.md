@@ -4,43 +4,60 @@ Create REST APIs using expressJs that allows to perform CRUD operations on Camer
 
 Technologies used: Node.js,express.js,SQL,Postman,Thunder client
 
-_____________________________________________________________________
-Create a new MySQL database and create two tables: cameras and camera_networks. 
-_____________________________________________________________________
-Create a new file called db.js and create a new MySQL connection
-_____________________________________________________________________
-Create a new files called cameraController.js and networkController.js and their routes
+
 _____________________________________________________________________
 
 Adding a camera file:
 
 router post
-Url for adding a file: http://localhost:3000/cameras
+Url for adding a file:
+```http
+POST  http://localhost:3000/cameras
+```
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `name` | `string` | *Required* |
+| `description` | `string` | *Required* |
+| `resolution` | `string` | *Required* |
+| `price` | `string` | *Required* |
 
 ________________________________________
 Get all camera files
 
 router get
-Get all file : http://localhost:3000/cameras
+Get all file :
+```http
+GET  http://localhost:3000/cameras
+```
 ________________________________________
 
 Get a camera file
 
 router get
-Get a file : http://localhost:3000/cameras/:id
+Get a file : 
+```http
+GET  http://localhost:3000/cameras/:id
+```
 
 _______________________________________
 
 Update a file
 
 router put
-Update a file :http://localhost:3000/cameras/:id
+Update a file :
+```http
+PUT  http://localhost:3000/cameras/:id
+```
 _______________________________________
 
 Remove a camera file
 router delete
 
-Remove a file : http://localhost:3000/cameras/:id
+Remove a file : 
+```http
+DELETE  http://localhost:3000/cameras/:id
+```
 
 
 
@@ -50,30 +67,75 @@ ________________________________________
 Adding a Network file:
 
 router post
-Url for adding a file: http://localhost:3000/camera-networks
+Url for adding a file: 
+```http
+POST http://localhost:3000/camera-networks
+```
+
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `name` | `string` | *Required* |
+| `camera` | `string` | *Required* |
 
 ________________________________________
 Get all Network files
 
 router get
-Get all file : http://localhost:3000/camera-networks
+Get all file : 
+```http
+GET http://localhost:3000/camera-networks
+```
 ________________________________________
 
 Get a Network file
 
 router get
-Get a file : http://localhost:3000/camera-networks/:id
+Get a file : 
+```http
+GET http://localhost:3000/camera-networks/:id
+```
 
 _______________________________________
 
 Update a file
 
 router put
-Update a file :http://localhost:3000/camera-networks/:id
+Update a file :
+```http
+PUT http://localhost:3000/camera-networks/:id
+```
 _______________________________________
 
 Remove a Network file
 router delete
 
-Remove a file : http://localhost:3000/camera-networks/:id
+Remove a file :
+```http
+DELETE http://localhost:3000/camera-networks/:id
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
