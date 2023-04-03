@@ -2,6 +2,8 @@
 
 Create REST APIs using expressJs that allows to perform CRUD operations on Camera entity, as well as do CRUD operations on "network of cameras"(CameraNetworks). The "networks of camera" will consist of "cameras" that can be mutually inclusive. On performing the delete operations on the camera table the CameraNetworks table should be updated accordingly.
 
+Technologies used: Node.js,express.js,SQL,Postman,Thunder client
+
 _____________________________________________________________________
 Create a new MySQL database and create two tables: cameras and camera_networks. 
 _____________________________________________________________________
